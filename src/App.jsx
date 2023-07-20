@@ -1,8 +1,7 @@
-import './index.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Create from './components/Create';
-import BlogDetails from './components/BlogDetails';
+import BlogArticle from './components/BlogArticle';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
@@ -15,7 +14,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/create" element={<Create />} />
-            <Route path="/blogs/:id" element={<BlogDetails />} />
+            <Route path="/blogs/:id" element={<BlogArticle />} />
           </Routes>
         </div>
       </div>

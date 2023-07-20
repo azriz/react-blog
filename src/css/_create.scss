@@ -1,0 +1,83 @@
+.create {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  @include breakpoint(tablet) {
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  .form {
+    width: 50%;
+    @include breakpoint(tablet) {
+      width: 100%;
+    }
+    input, textarea, select {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin: 10px 0;
+      padding: 6px 10px;
+      height: 40px;
+      width: 100%;
+    }
+    textarea {
+      min-height: 200px;
+    }
+    .btn {
+      &:hover {
+        background-color: $color-hover;
+      }
+    }
+  }
+  .preview {
+    width: 45%;
+    @include breakpoint(tablet) {
+      margin-top: 30px;
+      width: 100%;
+    }
+    .preview-area {
+      h3 {
+        font-size: 22px;
+      }
+      .preview-row {
+        display: flex;
+        margin-top: 10px;
+        label {
+          text-align: left;
+          display: block;
+        }
+        h4 {
+          margin-right: 10px;
+          min-width: 80px;
+        }
+        p {
+          white-space: pre-line;
+        }
+      }
+    }
+    img {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+  .btn {
+    background: $color-primary;
+    color: #fff;
+    border: 0;
+    margin-top: 30px;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    @include breakpoint(tablet) {
+      margin-top: 10px;
+    }
+    @include breakpoint(mobile) {
+      width: 100%;
+    }
+  }
+}

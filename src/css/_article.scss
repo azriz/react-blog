@@ -1,0 +1,52 @@
+.blog-article {
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .back-to-listing {
+      margin-bottom: 50px;
+      @include breakpoint(tablet) {
+        margin-bottom: 30px;
+      }
+      a {
+        text-decoration: underline;
+        &:hover {
+          color: $color-hover;
+        }
+      }
+    }
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      @include breakpoint(mobile) {
+        margin-bottom: 5px;
+      }      
+    }
+    p.author {
+      margin-bottom: 40px;
+      text-align: center;
+      @include breakpoint(mobile) {
+        margin-bottom: 20px;
+      }
+    }
+    div.article-content {
+      margin: 20px 0;
+      white-space: pre-line;
+    }
+    img {
+      margin: 0 auto 50px;
+      width: 50%;
+      @include breakpoint(tablet) {
+        width: 100%;
+      }
+      @include breakpoint(mobile) {
+        margin-bottom: 20px;
+      }
+    }
+    .btn {
+      &:hover {
+        background-color: red;
+      }
+    }
+  }
+}
