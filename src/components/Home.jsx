@@ -2,8 +2,11 @@ import BlogList from "./BlogList";
 import useFetch from "../useFetch";
 
 const Home = () => {
-
-  const { data: blogs, isPending, error} = useFetch('http://localhost:8000/blogs');  
+  const {
+    data: blogs,
+    isPending,
+    error,
+  } = useFetch("https://mmd4q6-8000.csb.app/blogs/");
 
   return (
     <div className="home">
@@ -12,6 +15,6 @@ const Home = () => {
       {blogs && <BlogList blogs={blogs} title="All Articles" />}
     </div>
   );
-}
- 
+};
+
 export default Home;

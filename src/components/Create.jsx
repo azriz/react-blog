@@ -16,7 +16,7 @@ const Create = () => {
 
     setIsPending(true);
 
-    fetch('http://localhost:8000/blogs', { // Fetching data from our endpoint
+    fetch('https://mmd4q6-8000.csb.app/blogs', { // Fetching data from our endpoint
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(blog) // Converting from objects to strings
