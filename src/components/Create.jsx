@@ -48,9 +48,9 @@ const Create = () => {
           onChange={(e) => setAuthor(e.target.value)}
           >
             <option value="">Please select</option>
-            <option value="mario">Person A</option>
-            <option value="yoshi">Person B</option>
-            <option value="az">Person C</option>
+            <option value="Person A">Person A</option>
+            <option value="Person B">Person B</option>
+            <option value="Person C">Person C</option>
           </select>
           <label>Image URL:</label>
           <input
